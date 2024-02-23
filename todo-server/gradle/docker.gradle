@@ -1,0 +1,13 @@
+tasks.named("bootBuildImage") {
+	environment["BP_JVM_VERSION"] = "${java.sourceCompatibility}"
+	imageName = "docker.io/" + System.getProperty('docker.hub.user') + "/${project.name}:${project.version}"
+	//publish = true
+
+	docker {
+		builderRegistry {
+			url = 'https://index.docker.io/v1/'
+			username = System.getProperty('docker.hub.user')
+			password = System.getProperty('docker.hub.pass')
+		}
+	}
+}

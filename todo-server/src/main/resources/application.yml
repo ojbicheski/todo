@@ -1,0 +1,27 @@
+# Global configuration 
+
+logging:
+  level:
+    '[ca.bicheski]': DEBUG
+
+Globals:
+  Api:
+    Cors:
+      AllowMethods: "'OPTIONS,POST,PUT,GET,PATCH,DELETE'"
+      AllowHeaders: "'*'"
+
+spring:
+      
+  datasource:
+    hikari: 
+      connection-timeout: 30000
+      maximum-pool-size: 5
+      minimum-idle: 2
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      pool-name: collection-pool
+      
+  jpa:
+    hibernate:
+      ddl-auto: none      
+    show-sql: true

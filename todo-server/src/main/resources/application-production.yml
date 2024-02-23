@@ -1,0 +1,27 @@
+# Production
+
+logging:
+  level:
+    '[ca.bicheski]': INFO
+
+Globals:
+  Api:
+    Cors:
+      AllowOrigin: "'http://todo-api.us-east-2.elasticbeanstalk.com,http://localhost:3000,http://localhost'"
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings.trace: false
+      settings.web-allow-others: false
+      
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+      
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect

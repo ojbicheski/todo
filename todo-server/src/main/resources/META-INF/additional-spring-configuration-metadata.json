@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "Globals.Api.Cors.AllowHeaders",
+    "type": "java.lang.String",
+    "description": "A description for 'Globals.Api.Cors.AllowHeaders'"
+  },
+  {
+    "name": "Globals.Api.Cors.AllowMethods",
+    "type": "java.lang.String",
+    "description": "A description for 'Globals.Api.Cors.AllowMethods'"
+  },
+  {
+    "name": "Globals.Api.Cors.Allow-origin",
+    "type": "java.lang.String",
+    "description": "A description for 'Globals.Api.Cors.Allow-origin'"
+  }
+]}

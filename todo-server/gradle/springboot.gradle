@@ -1,0 +1,13 @@
+springBoot {
+	mainClass = "${project.group}.todo.TodoApplication"
+	
+		buildInfo {
+		properties {
+			artifact = "${project.name}"
+			version = "${project.version}"
+			group = "${project.group}"
+			name = 'Todo application'
+		}
+	}
+	
+}
